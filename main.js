@@ -24,6 +24,7 @@ $("a").each(function (index, element) {
 
     $(this).click(function (e) { 
         e.preventDefault();
+        // .....
         
         // parseInt() 將文字轉為數字
         // stop() 停止當前所有動畫
@@ -32,6 +33,9 @@ $("a").each(function (index, element) {
         }, parseInt(duration));
     });
 });
+
+
+
 
 // 使用者在用滑鼠滾動時 停止動畫
 $("html").on("mousewheel", function () {
