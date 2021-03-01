@@ -5,33 +5,43 @@
 }
 
 nav {
-    background:rgba(0 ,0 ,0 ,0.5);
+    background: rgba(0, 0, 0, 0.3);
     height: 100px;
     position: fixed;
     width: 100%;
 
-
-
-    a{
-        padding: 20px;
-        color:white;
+    a {
+        padding: 25px 60px;
+        text-decoration: none;
         display: inline-block;
+        color: #fff;
+        font-size: 32px;
     }
 }
 
 section {
-    height:100vh;
-    font-size: 50px;
+    height: 100vh;
     text-align: center;
     line-height: 100vh;
+    font-size: 80px;
+    color: #fff;
 
     &:nth-of-type(odd) {
         background: lightblue;
     }
     &:nth-of-type(even) {
-        background:pink;
+        background: pink;
     }
+}
 
-
-
+// 箭頭樣式
+#arrow {
+    background-image: url(./arrow.png);
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    cursor: pointer;
 }
